@@ -1,9 +1,10 @@
 import React, { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
+import server from '../enviroment';
 
 const AuthContext = createContext();
 
-const BACKEND_URL = "http://localhost:5000";
+const BACKEND_URL = `${server}`;
 
 const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
