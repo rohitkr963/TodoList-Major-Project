@@ -1,0 +1,177 @@
+/* styles/todoStyles.css */
+.todo-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.todo-form button {
+  padding: 10px 20px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-list {
+  margin-top: 10px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  background: #f3f3f3;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 6px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: red;
+  cursor: pointer;
+}
+
+.not-auth {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* styles/todoStyles.css */
+.todo-item {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.todo-actions button {
+  margin-left: 10px;
+  padding: 4px 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Circular Checkbox Styles */
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.checkbox.checked {
+  border-color: #4CAF50;
+  background-color: #4CAF50;
+}
+
+.checkmark {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Todo Text Styles */
+.todo-text {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+/* Edit Input */
+.todo-edit-input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Existing Todo Item Styles */
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+/* Make todo text full width and clickable */
+.todo-text {
+  flex-grow: 1;
+  cursor: pointer;
+  padding: 4px 0;
+  margin-right: 8px;
+}
+
+/* Checkbox alignment */
+.checkbox {
+  flex-shrink: 0;
+}
+
+/* When editing, make input take full width */
+.todo-edit-input {
+  flex-grow: 1;
+  padding: 4px;
+  margin-right: 8px;
+}
